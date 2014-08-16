@@ -21,8 +21,6 @@ Command get_command() {
             } else if (word == 1) {
                 command.noun[offset] = '\0';
             } else if (word == 2) {
-                command.preposition[offset] = '\0';
-            } else if (word == 3) {
                 command.noun_b[offset] = '\0';
             }
             offset = 0;
@@ -35,8 +33,6 @@ Command get_command() {
         } else if (word == 1) {
             command.noun[offset] = command_string[i];
         } else if (word == 2) {
-            command.preposition[offset] = command_string[i];
-        } else if (word == 3) {
             command.noun_b[offset] = command_string[i];
         }
         offset++;
